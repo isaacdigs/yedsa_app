@@ -1,5 +1,10 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@font-face {
+font-family: "Harabara Bold";
+src: url("BM-HANNA.ttf") format("truetype");
+}
+
 
 * {
     font-family: 'Hanna', sans-serif;
