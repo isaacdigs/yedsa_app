@@ -21,15 +21,29 @@
         font-family: "Hanna";
         src: url("BM-HANNA.ttf") format("truetype");
         }
+        @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
+        .nanumgothic * {
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
 
         * {
-            font-family: 'Hanna', sans-serif;
+            font-family: 'Nanum Gothic Coding', monospace;
         }
         
         .carousel {
             max-width: 1000px;
             
+        }
+        
+        a.collapsed {
+            color: #808080;
+            text-decoration: none;
+        }
+        
+        a.collapsed:active {
+            color: #333;
+            text-decoration: none;
         }
         
         .carousel-item:after {
@@ -46,6 +60,7 @@
         }
         
         .carousel-caption {
+            font-family: 'Hanna', sans-serif;
             top:50%;
             transform: translateY(-45%);
         }
@@ -68,9 +83,46 @@
             max-width: 1000px;
         }
         
-        footer {
-            background-color: #D5D5D5;
+        .card-title {
+                font-family: 'Hanna', sans-serif;
         }
+        
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #333;
+        }
+        
+        footer {
+            background-color: #efefef;
+        }
+        
+        .navbar {
+            background-color: #008080;
+        }
+        .nav-link {
+            font-family: 'Hanna', sans-serif;
+        }
+        
+        .list-group-item.active {
+            background-color: #008080;
+        }
+        
+        #accordion .card {
+            background-color: #008080
+        }
+        
+        #accordion .card a {
+            text-decoration: none;
+            color: #FFF
+        }
+        
+        #accordion .card a:active,
+        #accordion .card a:hover
+        {
+            text-decoration: none;
+            font-weight: 900
+            
+        }
+        
         
         
     </style>
@@ -79,8 +131,8 @@
     
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand" href="#"><img src="logogif.gif"></a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand mr-5" href="#"><img src="logogif.gif"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -88,7 +140,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link mx-2 ml-5" href="#carouselFull">홈으로 <span class="sr-only">홈으로</span></a>
+                    <a class="nav-link mx-2" href="#carouselFull">홈으로 <span class="sr-only">홈으로</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="#conti">이번주 콘티</a>
@@ -147,7 +199,7 @@
     <div class="card" id="conti">
         <img class="card-img-top mt-5" src="musicalnote.jpg" alt="Card image">
         <div class="card-body">
-           <h4 class="card-title">이번주 콘티</h4>
+           <h2 class="card-title">이번주 콘티</h2>
                <p class="card-text">2월 찬양 순서</p>
 
        </div>
@@ -171,8 +223,9 @@
        <div class="tab-pane fade" id="first" role="tabpanel" aria-labelledby="first-tab">
            
             <ul class="list-group">
-                <li class="list-group-item active">2/5 주일 청년부 예배 <br><span class="badge badge-warning">하나님의 능력, 권세, 사랑</span></li>
-                <li class="list-group-item">1. 능력의 주(글로벌프로젝트)</li>
+                
+                <li class="list-group-item">2/5 주일 청년부 예배 <br><span class="badge badge-warning">하나님의 능력, 권세, 사랑</span></li>
+                <li class="list-group-item active">1. 능력의 주(글로벌프로젝트)</li>
                 <li class="list-group-item">2. 주님의 사랑</li>
                 <li class="list-group-item">3. 예수님만을 더욱사랑 - 내 구주 예수를 더욱사랑</li>
                 <li class="list-group-item list-group-item-light">4. 결단: 내가 너희를 사랑하는 이유는</li>
@@ -220,43 +273,77 @@
         <div class="card">
             <img class="card-img-top mt-5" src="musicalnote.jpg" alt="Card image">
             <div class="card-body">
-               <h4 class="card-title">이번주 악보</h4>
-                   <p class="card-text">터치해서 펼치기</p>
+               <h2 class="card-title">이번주 악보</h2>
+               <h5><span class="card-text badge badge-info">터치해서 펼치기!</span></h5>
 
             </div>
         </div>
         
         <div id="accordion" role="tablist" class="mb-5">
            <div class="card">
-               <div class="card-header" role="tab" id="headingOne">
+               <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><div class="card-header" role="tab" id="headingOne">
                    <h5 class="mb-0">
-                       <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">1. 날향한 계획</a>
+                       1. 날향한 계획
                    </h5>
-               </div>
+               </div></a>
                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                    <div class="card-body"><img src="http://cfile25.uf.tistory.com/image/26583B3C56B2F10F018FC5" width=100%></div>
                </div>
            </div>
            <div class="card">
-               <div class="card-header" role="tab" id="headingTwo">
-                   <h5 class="mb-0">
-                       <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. 온세상 창조주</a>
-                   </h5>
-               </div>
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card-header" role="tab" id="headingTwo">
+                       <h5 class="mb-0">
+                            2. 온세상 창조주
+                       </h5>
+                    </div>
+               </a>
                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                    <div class="card-body"><img src= "http://cfile232.uf.daum.net/image/203608344DFEE22708D098" width=100%></div>
                </div>
            </div>
            <div class="card">
-               <div class="card-header" role="tab" id="headingThree">
-                   <h5 class="mb-0">
-                       <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. 참 아름다와라</a>
-                   </h5>
-               </div>
+               <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   <div class="card-header" role="tab" id="headingThree">
+                       <h5 class="mb-0">
+                           3. 참 아름다와라
+                       </h5>
+                   </div>
+               </a>
                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                    <div class="card-body"><img src="http://blogfiles.naver.net/20160524_274/lordship46_1464073042426hr2zD_JPEG/%C7%CF%B3%AA%B4%D4%C0%C7_%BC%BC%B0%E8%28%C2%FC_%BE%C6%B8%A7%B4%D9%BF%EE_%B0%F7%C0%CC%B6%F3%29-001-001.jpg" width=100% alt="참 아름다와라"></div>
                </div>
            </div>
+            
+           <div class="card">
+               <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   <div class="card-header" role="tab" id="headingThree">
+                       <h5 class="mb-0">
+                           4. 하나님은 너를 만드신 분
+                       </h5>
+                   </div>
+               </a>
+               <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                   <div class="card-body"><img src="http://www.sarang.ca/board/data/file/ccm/1614230986_1egKykfj_C7CFB3AAB4D4C0BA_B3CAB8A6_B8B8B5E5BDC5_BAD0__B1D7C0C7_BBFDB0A22C_BFE4BFA4BFA1B0D4_.jpg" width=100% alt="하나님은 너를 만드신 분"></div>
+               </div>
+           </div>
+                        
+           <div class="card">
+               <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   <div class="card-header" role="tab" id="headingThree">
+                       <h5 class="mb-0">
+                           5. 주만이 내반석
+                       </h5>
+                   </div>
+               </a>
+               <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                   <div class="card-body"><img src="http://mblogthumb1.phinf.naver.net/20160225_120/worship6890_14563735423118lwnr_JPEG/%C1%A6%B8%F1_%BE%F8%C0%BD.jpg?type=w800" width=100% alt="주만이 내반석"></div>
+               </div>
+           </div>
+            
+            
+            
+            
         </div>
     </div>
 
