@@ -3,12 +3,23 @@
     font-family: "Hanna";
     src: url("BM-HANNA.ttf") format("truetype");
 }
-
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("NanumGothic-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("NanumGothic-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("NanumGothic-Regular.ttf") format("truetype");
+}
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 
 
-* {font-family: 'Nanum Gothic Coding', monospace;}
+* {font-family: 'Nanum Gothic', monospace;}
 
 
 
@@ -134,6 +145,7 @@ footer {
 
 #accordion .card h5 {
     font-weight: 500;
+    font-size: 110%;
 }
 
 #accordion .card a {
