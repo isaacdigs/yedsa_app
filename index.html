@@ -28,8 +28,8 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand mr-5" href="#"><img class="" src="yedsalogo.png"></a>
         <span class="buttonspan">
-            <a href="#conti"><button class="btn btn-outline-light fa fa-list-ol py-2" style="font-size: 21px"></button></a>
-            <a href="#music"><button class="btn btn-outline-light fa fa-music py-2" style="font-size: 21px"></button></a>
+            <a href="#conti"><button class="btn btn-outline-light nav-buttons fa fa-list-ol py-2" style="font-size: 19px"></button></a>
+            <a href="#music"><button class="btn btn-outline-light nav-buttons fa fa-music py-2" style="font-size: 19px"></button></a>
         </span>
         <div class="float-right">         
             <ul class="navbar-nav">
@@ -73,7 +73,7 @@
 No Menu-->
     </nav>
     
-    <div class="carouselWrapper">
+    <div class="carouselWrapper pt-5">
     <div id="carouselFull" class="carousel slide" data-ride="carousel">
        <ol class="carousel-indicators">
            <li data-target="#carouselFull" data-slide-to="0" class="active"></li>
@@ -200,7 +200,7 @@ No Menu-->
             
             <div class="card-body">
                <h2 class="card-title">이번주 악보</h2>
-               <h5><span class="card-text badge badge-primary">터치해서 펼치기!</span></h5>
+               <h5><span class="card-text badge badge-primary">곡 제목 터치!</span></h5>
 
             </div>
         </div>
@@ -312,6 +312,13 @@ No Menu-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Prevent additional scroll -->
+    <script type="text/javascript">
+        document.addEventListener('touchmove', function(event) {
+             event.preventDefault();
+        }, false);
+    </script>
 
 
 </body>
