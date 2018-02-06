@@ -123,7 +123,7 @@ footer {
 
 #accordion .card
 {
-    background-color: #f0f0f0;
+    background-color: #fff;
     box-shadow: 0 -1px 2px 3px #ddd inset;
 }
 
@@ -220,8 +220,8 @@ footer {
 }
 
 .list-group-item:not(.active) {
-    background-color: #f0f0f0;
-    box-shadow: 0 -1px 2px 3px #ddd inset;
+    background-color: #ffff;
+    box-shadow: 0 -1px 2px #ddd inset;
         
 }
 
