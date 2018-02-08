@@ -1,52 +1,64 @@
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @font-face {
-    font-family: "Hanna";
-    src: url("BM-HANNA.ttf") format("truetype");
+  font-family: "Hanna";
+  src: url("BM-HANNA.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Nanum Gothic";
-    src: url("NanumGothic-Bold.ttf") format("truetype");
+  font-family: "Nanum Gothic";
+  src: url("NanumGothic-Bold.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Nanum Gothic";
-    src: url("NanumGothic-ExtraBold.ttf") format("truetype");
+  font-family: "Nanum Gothic";
+  src: url("NanumGothic-ExtraBold.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Nanum Gothic";
-    src: url("NanumGothic-Regular.ttf") format("truetype");
+  font-family: "Nanum Gothic";
+  src: url("NanumGothic-Regular.ttf") format("truetype");
 }
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 
 
 * {font-family: 'Nanum Gothic', monospace;}
 
+.modal {
 
+}
 
 .carousel {
-    max-width: 1000px;
+  max-width: 1000px;
 }
 
 .carousel-caption .btn {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a.collapsed {
-    color: #808080;
-    text-decoration: none;
+  color: #808080;
+  text-decoration: none;
 }
 
 a.collapsed:active {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 
 #music .card-img-top {
-    width: 100%;
-    background: cover;
+  width: 100%;
+  background: cover;
 }
 
+.img-overlay {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
 
 .carousel-item:after {
 
@@ -63,182 +75,182 @@ a.collapsed:active {
 
 
 .carousel-caption {
-    font-family: 'Hanna', sans-serif;
-    top:50%;
-    transform: translateY(-45%);
+  font-family: 'Hanna', sans-serif;
+  top:50%;
+  transform: translateY(-45%);
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
 .navbar-brand img {
-    width: 200px;
-    transform: translateY(-10px);
+  width: 200px;
+  transform: translateY(-10px);
 }
 
 
 .card-title {
-        font-family: 'Hanna', sans-serif;
+  font-family: 'Hanna', sans-serif;
 
 }
 
 
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #333;
+  color: #333;
 }
 
 footer {
-    background-color: #efefef;
-    font-size: 80%;
-    
+  background-color: #efefef;
+  font-size: 80%;
+
 }
 .navbar {
-    opacity: 0.95;
-    box-shadow: 0 2px 10px;
+  opacity: 0.95;
+  box-shadow: 0 2px 10px;
 }
 
 .navbar .fa {
-    
-    /*3D style******************/
-    /*border: 0;
-    border-radius: 5px;
-    background: #ccc;
-    box-shadow: -1px -2px 10px inset
-    */
+
+  /*3D style******************/
+  /*border: 0;
+  border-radius: 5px;
+  background: #ccc;
+  box-shadow: -1px -2px 10px inset
+  */
 }
 
 .navbar-brand img{
-    position: absolute;
-    top: 30%;
+  position: absolute;
+  top: 30%;
 }
 .nav-link {
-    font-family: 'Hanna', sans-serif;
+  font-family: 'Hanna', sans-serif;
 }
 
 .navbar {
-    height: 50px;
+  height: 50px;
 }
 
 .list-group-item.active {
-    background-color: #666;
-    border-color: #555;
+  background-color: #666;
+  border-color: #555;
 }
 
 
 #accordion .card
 {
-    background-color: #fff;
-    box-shadow: 0 -1px 2px 3px #ddd inset;
+  background-color: #fff;
+  box-shadow: 0 -1px 2px 3px #ddd inset;
 }
 
 #accordion .card .bg-secondary {
-    background-color: #a0a0a0 !important;
-    box-shadow: inset 0px -1px 3px 3px #909090;
+  background-color: #a0a0a0 !important;
+  box-shadow: inset 0px -1px 3px 3px #909090;
 }
 
 #accordion .card h5 {
-    font-weight: 500;
-    font-size: 110%;
+  font-weight: 500;
+  font-size: 110%;
 }
 
 #accordion .card a {
-    text-decoration: none;
-    color: #FFF
+  text-decoration: none;
+  color: #FFF
 }
 
 #accordion .card a:active,
 #accordion .card a:hover
 {
-    text-decoration: none;
-    font-weight: 900
+  text-decoration: none;
+  font-weight: 900
 
 }
 /*Bigger Screen*/
 @media only screen and (min-width: 768px) {
-    .navbar .fa {display: none;}
-    .navbar-nav {
-        position: absolute;
-        right: 0px;
-        transform: translateY(-20px);
-    }
-    .carousel {
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #333;
-    }
-    .navbar {
-        opacity: 1;
-        z-index: 9999;
-    }
-    .carousel-caption {
-        top:58%;
-    }
+  .navbar .fa {display: none;}
+  .navbar-nav {
+    position: absolute;
+    right: 0px;
+    transform: translateY(-20px);
+  }
+  .carousel {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #333;
+  }
+  .navbar {
+    opacity: 1;
+    z-index: 2;
+  }
+  .carousel-caption {
+    top:58%;
+  }
 
-    #conti {
-        max-width: 900px;
-        margin: 0 auto;
-    }
+  #conti {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    #music {
-        max-width: 900px;
-        margin: 0 auto;
-    }
+  #music {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    .nav-tabs, .nav-content {
-        max-width: 900px;
-        margin: 0 auto;
+  .nav-tabs, .nav-content {
+    max-width: 900px;
+    margin: 0 auto;
 
-    }
+  }
 
-    .list-group-item {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-    
-    #music .card-img-container {
-        height: 400px;
-    }
+  .list-group-item {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #music .card-img-container {
+    height: 400px;
+  }
 
 
-/*Mobile*/    
+  /*Mobile*/
 }
 @media only screen and (max-width: 769px) {
-    .navbar-nav {display: none;}
-    .navbar .buttonspan {position: absolute; right:15px;}
+  .navbar-nav {display: none;}
+  .navbar .buttonspan {position: absolute; right:15px;}
 }
-        
+
 .carouselWrapper {
-    background-color: #777;
-    z-index: -999;
+  background-color: #777;
+  z-index: -999;
 
 }
 
 
 .contiWrapper {
-    background-color: #efefef;
-    margin-bottom: 150px;
+  background-color: #efefef;
+  margin-bottom: 150px;
 }
 .musicWrapper {
-    background-color: #fff;
-    margin-bottom: 150px;
+  background-color: #fff;
+  margin-bottom: 150px;
 }
 
 .list-group-item:not(.active) {
-    background-color: #ffff;
-    box-shadow: 0 -1px 2px #ddd inset;
-        
+  background-color: #ffff;
+  box-shadow: 0 -1px 2px #ddd inset;
+
 }
 
 .nav-buttons {
-    padding: 0;
-    width: 35px;
-    height: 35px;
+  padding: 0;
+  width: 35px;
+  height: 35px;
 }
