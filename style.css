@@ -1,19 +1,19 @@
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @font-face {
   font-family: "Hanna";
-  src: url("BM-HANNA.ttf") format("truetype");
+  src: url("./assets/BM-HANNA.ttf") format("truetype");
 }
 @font-face {
   font-family: "Nanum Gothic";
-  src: url("NanumGothic-Bold.ttf") format("truetype");
+  src: url("./assets/NanumGothic-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Nanum Gothic";
-  src: url("NanumGothic-ExtraBold.ttf") format("truetype");
+  src: url("./assets/NanumGothic-ExtraBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Nanum Gothic";
-  src: url("NanumGothic-Regular.ttf") format("truetype");
+  src: url("./assets/NanumGothic-Regular.ttf") format("truetype");
 }
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
